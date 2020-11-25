@@ -1,0 +1,55 @@
+ *{
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 88%;
+  }
+
+  .img-fluid{
+  	height: 20px;
+  }
+
+
+
+ body, html {
+  height: 100%;
+  /* The image used */
+    background-image:url('images/lg3.jpg'); 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  
+
+  /* Control the height of the image */
+  min-height: 380px;
+  width: 600px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.card-img-top {
+width: 100%;
+height: 15vw;
+object-fit: cover;
+
+}
