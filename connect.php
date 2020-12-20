@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','testdb');
+$conn = mysqli_connect('localhost','root','','photodb');
 
 // Check connection
 if (!$conn) {

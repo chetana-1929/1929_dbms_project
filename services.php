@@ -22,60 +22,19 @@
       <li class="nav-item">
         <a class="nav-link" href="about.php">About</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="contactUs.php">Contact</a>
-      </li>
+       
       <li class="nav-item">
         <a class="nav-link" href="login.php">Log In</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="user_register.php">Register</a>
+        <a class="nav-link" href="user_register2.php">Register</a>
       </li>
     </ul>
     
   </div>
 </nav>
  
-<!--  <section class="my-5">
-	<div class="my-5">
-	<h2 class="text-center">Our services</h2>		
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-12">
-				<div class="card" style="width:400px">
-            <img class="card-img-top" src="images/img1.jpg" alt="Card image">
-               <div class="card-body">
-                    <h4 class="card-title">Birthday photography</h4>
-                       <p class="card-text">Some example text.</p>
-                           <a href="birthdayImages.php" class="btn btn-primary">See Portfolio</a>
-              </div>
-         </div>
-      </div>
-		 <div class="col-lg-4 col-md-4 col-12">
-				<div class="card" style="width:400px">
-           <img class="card-img-top" src="images/img1.jpg" alt="Card image">
-              <div class="card-body">
-                  <h4 class="card-title">Wedding photography</h4>
-                    <p class="card-text">Some example text.</p>
-                       <a href="#" class="btn btn-primary">See Portfolio</a>
-              </div>
-          </div>
-    </div>
-		     <div class="col-lg-4 col-md-4 col-12">
-				<div class="card" style="width:400px">
-                    <img class="card-img-top" src="images/img1.jpg" alt="Card image">
-                     <div class="card-body">
-                           <h4 class="card-title">Engagement photography</h4>
-                           <p class="card-text">Some example text.</p>
-                            <a href="#" class="btn btn-primary">See Portfolio</a>
-                      </div>
-                 </div>
 
-		    </div>
-	   </div>
-	</div>
-</section> -->
 <section class="collection">
   <div class=" container py-5">
   <h2 class="text-center">Our services</h2>   

@@ -1,4 +1,3 @@
-
 <html>
 <head>
 	<title></title>
@@ -34,7 +33,9 @@
       <li class="nav-item">
         <a class="nav-link" href="about.php">About</a>
       </li>
-        
+       <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="login.php">Log In</a>
       </li>
@@ -46,41 +47,44 @@
   </div>
 </nav>
 
-	 <h1 style="position: absolute; left: 25%; top: 20%"> <font color="Black"> Customer Registration </font> </h1>
+	 <h1 style="position: absolute; left: 25%; top: 20%"> <font color="Black"> Photoshoot Booking </font> </h1>
 	 <form method="post" style="position: absolute; left: 30%; top: 42%">
-	 	Name: <input type="text" name="uname" required style="position: absolute; left: 30%"> <br> <br>
+	 	<b>Name: <input type="text" name="uname" required style="position: absolute; left: 30%"> <br> <br>
 	 	Contact: <input type="text" name="contact" required style="position: absolute; left: 30%"> <br> <br>
-		Username: <input type="text" name="username" required style="position: absolute; left: 30%"> <br> <br>
+		 
+
+		Choose a category: <select name="category"  required style="position: absolute; left: 50%">
+              <option value="Birthday">Birthday</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Engagement">Engagement</option>
+              <option value="Fashion">Fashion</option>
+              </select>
+                <br><br>
 		
-		Password: <input type="password" name="password"> <br> <br>
-		<input type="submit" value="Submit" name="save" required style="position: absolute; width: 100%">
+		 Date of Photoshoot: <input type="date" name="bdate"  > <br> <br>
+
+         <p >Payment option: Cash On Delivery Only</p> <br>
+         <input type="submit" value="Book" name="save" required style="position: absolute; width: 100%">
+     </b>
 	</form>
 	<?php
 		include('connect.php');
 		extract($_REQUEST);
 		if(isset($save))
-		{
-			  $sql= mysqli_query($conn,"select * from user_register where username='$username'");
-			  if(mysqli_num_rows($sql))
-			  {
-			  	echo '<script>alert(" Username Already Exist")</script>';
-			  }
-
-			  else
-			  {
-			  	$sql= "insert into user_register(uname,contact,username,password) values ('$uname','$contact','$username','$password')";
+		 		 {
+			  	$sql= "insert into booking(uname,contact,category,bdate) values ('$uname','$contact','$category','$bdate')";
 			  	if(mysqli_query($conn,$sql))
 			  	{
-					  echo '<script>alert("Registered")</script>';  
-					  header("location:login.php");
+					  echo '<script>alert("Booking Successful")</script>';  
+					 /* header("location:welcome.php");*/
 			  	}
 
 			  	else
 			  	{
-					  echo '<script>alert("Not Registered")</script>'; 
-					 //header("location:abc.php");
+					  echo '<script>alert("Booking not successful")</script>'; 
+					 /* header("location:abc.php");*/
 			  	}	
-			  }
+			  
 		}
 
 	?>

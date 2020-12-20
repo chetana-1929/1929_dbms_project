@@ -45,14 +45,12 @@
       <li class="nav-item">
         <a class="nav-link" href="about.php">About</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
+        
       <li class="nav-item">
         <a class="nav-link" href="login.php">Log In</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="user_register.php">Register</a>
+        <a class="nav-link" href="user_register2.php">Register</a>
       </li>
     </ul>
     
